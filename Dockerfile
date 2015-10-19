@@ -8,4 +8,4 @@ ADD itau/warsaw_setup_64.deb /root/warsaw_setup_64.deb
 #itau
 RUN apt-get -y install openssl libcurl3 libnss3-tools && dpkg -i ./warsaw_setup_64.deb
 
-CMD cd && echo $PWD && firefox || (cd && firefox)
+CMD cd && firefox || (cd && firefox)
